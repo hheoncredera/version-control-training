@@ -17,7 +17,7 @@ var pixels = [];
 drawGrid = () => {
     for (var y = 0; y < height / 20; y++) {
         for (var x = 0; x < width / 20; x++) {
-            pixels.push([x * 15, y * 15, 8, 8, 'blue', false]);
+            pixels.push([x * 15, y * 15, 8, 8, 'green', false]);
         }
     }
 
