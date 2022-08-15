@@ -7,6 +7,7 @@ const ctx = canvas.getContext("2d");
 const width = 400;
 const height = 400;
 var pixels = [];
+const colorString = 'blue'
 
 /*
     Draws a grid of pixels;
@@ -17,7 +18,7 @@ var pixels = [];
 drawGrid = () => {
     for (var y = 0; y < height / 20; y++) {
         for (var x = 0; x < width / 20; x++) {
-            pixels.push([x * 15, y * 15, 8, 8, 'blue', false]);
+            pixels.push([x * 15, y * 15, 8, 8, colorString, false]);
         }
     }
 
@@ -34,9 +35,9 @@ singlePixel = () => {
     console.log(z);
 
     if (pixels[z][5] === false) {
-        ctx.fillStyle = 'blue';
+        ctx.fillStyle = colorString;
         ctx.fillRect(pixels[z][0], pixels[z][1], pixels[z][2], pixels[z][3]);
-        pixels[z][5] = true;
+        pixels[z][5] = true;S
     }
     else {
         ctx.fillStyle = '#add8e6';
