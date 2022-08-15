@@ -9,6 +9,8 @@ const height = 400;
 var pixels = [];
 const colorString = 'blue'
 
+//no errors should occur here
+
 /*
     Draws a grid of pixels;
     Creates a 2D array called pixels, which stores the x position, y position, width, height, and fill color at each index.

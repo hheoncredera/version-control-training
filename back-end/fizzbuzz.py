@@ -10,10 +10,10 @@ else:
     print("")
     for x in range(1, value + 1):
         if x % 3 == 0 and x % 5 == 0:
-            print("FizzBuzz!")
+            print("FizzBuzz! from VSCode")
         elif x % 3 == 0:
-            print("Fizz")
+            print("Fizz from VSCode")
         elif x % 5 == 0:
-            print("Buzz")
+            print("Buzz from VSCode")
         else:
             print(x)
