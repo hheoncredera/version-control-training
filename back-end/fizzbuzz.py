@@ -6,6 +6,7 @@ value = input("This program will evalue numbers from 1 to x. What you would like
 if not value.isnumeric():
     print("That's not a numerical value!")
 else:
+    value = int(value)
     print("")
     for x in range(1, value + 1):
         if x % 3 == 0 and x % 5 == 0:
